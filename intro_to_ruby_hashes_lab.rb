@@ -31,12 +31,11 @@ end
 end
 
 def update_counting_hash(hash, key)
-  hash[new_key] = nil
- if hash[new_key] 
-   hash[new_key] += 1
+ if hash[key] 
+   hash[key] += 1
    return hash[key]
  else 
-   hash[new_key] = 1
+   hash[key] = 1
  end
  return hash[key]
 end
